@@ -6,7 +6,6 @@ import SplitType from 'split-type';
 import coffeeImage from '../assets/img/coffee.png';
 import musicImage from '../assets/img/music.png';
 import fontImage from '../assets/img/font.png';
-import TypeHangul from 'type-hangul';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -325,13 +324,6 @@ const Home = () => {
             duration: 1,
             ease: "back.out(1.7)",
         });
-
-        // TypeHangul 애니메이션
-        if (window.innerWidth > 620) {
-            new TypeHangul('.target', {
-                intervalType: 25
-            });
-        }
 
         // Particles 애니메이션
         const circle = '<svg viewBox="0 0 67.4 67.4"><circle class="circle" cx="33.7" cy="33.7" r="33.7"/></svg>';
