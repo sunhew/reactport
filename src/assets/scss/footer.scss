@@ -1,0 +1,119 @@
+#footer {
+    width: 100%;
+    height: 110vh;
+    background-color: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: var(--white);
+    font-family: var(--fontE);
+    font-weight: 900;
+    padding: 2rem;
+    box-sizing: border-box;
+    margin-top: 16.8125vw;
+    margin-bottom: 0;
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        position: relative;
+        margin-bottom: -7vw;
+    }
+
+    .footer-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1;
+        margin-left: -6%;
+    }
+
+    .footer-left h1 {
+        font-size: 8.5vw;
+        margin: 0;
+        line-height: 4vw;
+    }
+
+    .footer-left h2 {
+        font-size: 6.375vw;
+        margin: 0;
+    }
+
+    .footer-right {
+        display: flex;
+        justify-content: space-between;
+        flex: 1;
+        align-items: flex-end;
+        margin: 27%;
+        margin-right: -4%
+    }
+
+    .footer-right .developer-site,
+    .footer-right .social-media {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-right p {
+        font-size: 1.25vw;
+        font-weight: 300;
+        margin-bottom: 1vw;
+        color: var(--pointText);
+    }
+
+    .footer-right ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer-right li {
+        font-size: 1.75vw;
+        margin-bottom: 0.5vw;
+    }
+
+    .footer-right a {
+        color: var(--white);
+        text-decoration: none;
+    }
+
+    .footer-right a:hover {
+        text-decoration: underline;
+    }
+
+    .scroll-top {
+        position: absolute;
+        right: 2rem;
+        bottom: 2rem;
+        width: 3vw;
+        height: 3vw;
+        background-color: var(--black);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .scroll-top span {
+        font-size: 1.5vw;
+        color: var(--white);
+    }
+
+    .scroll-top:hover {
+        background-color: var(--black300);
+    }
+
+    /* 추가적으로 다른 요소들과 겹치지 않도록 */
+    #footer h1,
+    #footer h2,
+    #footer a,
+    #footer p {
+        position: relative;
+        z-index: 2;
+    }
+
+}

@@ -1,0 +1,56 @@
+#section2 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+    .circle {
+        width: 30vw;
+        height: 30vw;
+        background-color: var(--pointBg);
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        margin: auto;
+    }
+
+    .circle.c1 {
+        transform: translate(-150%, -100%);
+    }
+
+    .circle.c2 {
+        transform: translate(150%, -100%);
+    }
+
+    .circle.c3 {
+        transform: translate(-100%, -100%);
+        width: 25vw;
+        height: 25vw;
+        background-color: var(--pointColor);
+    }
+
+    .circle.c4 {
+        transform: translate(100%, -100%);
+        width: 25vw;
+        height: 25vw;
+        background-color: var(--pointColor);
+    }
+
+    .circle.c5 {
+        background: url(../img/intropototo.svg) no-repeat;
+        background-size: cover;
+    }
+
+    .desc {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 50%;
+        transform: translate(-50%, 270%);
+        font-family: var(--fontK);
+        text-align: center;
+        margin-top: 1.5vw;
+    }
+}

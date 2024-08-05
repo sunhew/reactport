@@ -1,0 +1,112 @@
+#section6 {
+    width: 100%;
+    height: 2596px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    font-family: var(--fontK);
+
+    .container {
+        width: 1400px;
+        margin: 100px auto;
+
+        .circle_card {
+            width: 30vw;
+            border-radius: 50%;
+            overflow: hidden;
+            position: relative;
+            transition: transform 0.3s;
+        }
+
+        .circle_card img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 50%;
+        }
+
+        .circle_card-content {
+            width: 90%;
+            padding: 1rem;
+            text-align: left;
+            color: black;
+            border-radius: 15px;
+            /* 이미지와 텍스트 사이의 간격 추가 */
+        }
+
+        .circle_h3-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .circle_blue-circle {
+            width: 0.875vw;
+            height: 0.875vw;
+            background-color: var(--pointBg);
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .circle_card-content h3 {
+            font-size: 1vw;
+            margin: 0;
+            color: var(--pointBg);
+        }
+
+        .circle_card-content p {
+            font-size: 0.8vw;
+            margin-bottom: 10px;
+        }
+
+        .circle_card-content a {
+            font-size: 0.8vw;
+            text-decoration: none;
+            border-bottom: 1px solid;
+            transition: color 0.3s, border-color 0.3s;
+            color: var(--black);
+            margin-right: 10px;
+        }
+
+        .circle_card-content a:last-child {
+            margin-right: 0;
+        }
+
+        .circle_card-content a:hover {
+            color: var(--pointBg);
+            border-color: var(--pointBg);
+        }
+
+        /* 위치 지정 */
+        .circle_card1 {
+            margin-top: 10%;
+            margin-left: 10%;
+        }
+
+        .card-content1 {
+            margin-top: 2%;
+            margin-left: 19%;
+        }
+
+        .circle_card2 {
+            margin-top: -4%;
+            margin-left: 64%;
+        }
+
+        .card-content2 {
+            margin-top: 0%;
+            margin-left: 73%;
+        }
+
+        .circle_card3 {
+            margin-top: -11%;
+        }
+
+        .card-content3 {
+            margin-left: 16%;
+            margin-top: 0%;
+        }
+
+    }
+}

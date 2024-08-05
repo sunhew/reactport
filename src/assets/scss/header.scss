@@ -1,0 +1,34 @@
+#header {
+    font-family: var(--subfontE);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    z-index: 3000;
+}
+
+#header h1 {
+    font-size: 20px;
+    font-weight: 300;
+
+    span {
+        font-weight: 800;
+    }
+
+}
+
+#header nav {
+    width: 100px;
+    height: 100px;
+    background-color: var(--pointBg);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 300;
+    transform: rotate(45deg);
+}

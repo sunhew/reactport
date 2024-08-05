@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# 필요한 라이브러리 설치
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- npm install @stud : Smooth scrolling을 위한 패키지      
 
-## Available Scripts
+- npm install @testing-library/jest-dom : Jest와 함께 사용하는 DOM 테스트 확장 기능   
 
-In the project directory, you can run:
+- npm install @testing-library/react : React 컴포넌트의 테스트 유틸리티   
 
-### `npm start`
+- npm install @testing-library/user-event : 사용자 이벤트를 시뮬레이션하기 위한 유틸리티   
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- npm install axios : HTTP 클라이언트 라이브러리   
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- npm install gsap : 애니메이션 라이브러리 (GreenSock Animation Platform)   
 
-### `npm test`
+- npm install react : React 라이브러리   
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- npm install react-dom : React DOM 관련 라이브러리   
 
-### `npm run build`
+- npm install react-helmet-async : React에서 동적으로 `<head>` 내용을 변경할 수 있게 해주는 라이브러리   
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- npm install react-icons : React에서 아이콘을 사용할 수 있는 라이브러리   
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- npm install react-player : React에서 동영상 플레이어를 구현할 수 있는 라이브러리   
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- npm install react-router-dom : React용 라우팅 라이브러리   
 
-### `npm run eject`
+- npm install react-scripts : Create React App의 설정과 스크립트   
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- npm install sass : Sass(CSS 전처리기) 라이브러리   
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- npm install split-type : 텍스트를 개별 문자로 분리하기 위한 라이브러리   
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- npm install swiper : 슬라이드 쇼를 만들기 위한 라이브러리   
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- npm install type-hangul : 한글 애니메이션을 위한 라이브러리   
 
-## Learn More
+- npm install web-vitals : 웹의 중요한 성능 지표를 측정하기 위한 라이브러리   
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 페이지 빌드
 
-### Code Splitting
+- `npm run build`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## React의 코드 설명
+`npm run build`

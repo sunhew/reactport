@@ -1,0 +1,549 @@
+#section4 {
+    width: 100%;
+    height: 5500px;
+    margin-top: 2vw;
+
+
+
+}
+
+.sec5__inner .sub {
+    font-family: var(--fontK);
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 20vh;
+
+}
+
+.dotWrap {
+    position: relative;
+}
+
+.dot {
+    position: absolute;
+    left: 0;
+    top: -2.5vw;
+    padding-left: 20px;
+    display: inline-block;
+}
+
+.dot.right {
+    left: auto;
+    right: 0;
+}
+
+.dot::before {
+    content: "";
+    width: 0.625vw;
+    height: 0.625vw;
+    background-color: var(--pointBg);
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 2.2vw;
+}
+
+.dot.w15::before {
+    width: 0.9375vw;
+    height: 0.9375vw;
+}
+
+/* article1 */
+.article {
+    text-align: left;
+    padding-left: 1%;
+}
+
+.sec5__inner .article .imgWrap {
+    width: 45%;
+    aspect-ratio: 9/12;
+    position: relative;
+    overflow: hidden;
+    margin-left: 0%;
+}
+
+.sec5__inner .article.a2 .imgWrap {
+    width: 35%;
+    margin-left: auto;
+}
+
+.sec5__inner .article .imgWrap .img {
+    position: absolute;
+    left: -30%;
+    top: 5%;
+    width: 160%;
+    height: 160%;
+    background: url(../img/mainhtml.jpg) center center no-repeat;
+}
+
+.sec5__inner .article .imgWrap .link {
+    padding-left: 20px;
+    margin-top: 10px;
+    font-family: var(--fontK);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.sec5__inner .article .imgWrap .link a {
+    position: relative;
+    margin-right: 5px;
+    background-color: #ffffff68;
+    padding: 5px 33px 5px 17px;
+    margin-bottom: 20px;
+    display: inline-block;
+    border-radius: 50px;
+    border: 1px solid var(--white);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+.sec5__inner .article .link a::after {
+    display: inline-block;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: url("../img/arrow.svg") no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    transition: all 0.3s;
+}
+
+.sec5__inner .article .link a:hover::after {
+    transform: rotate(-45deg);
+}
+
+.sec5__inner .article h3 {
+    font-family: var(--fontK);
+    color: var(--pointBg);
+    font-size: 2.125vw;
+    margin-top: 30px;
+    padding-left: 20px;
+}
+
+.sec5__inner .article p {
+    font-family: var(--fontK);
+    margin-top: 20px;
+    color: var(--black600);
+    line-height: 1.6;
+    padding-left: 1.4%;
+}
+
+.sec5__inner .article pre {
+    width: 50%;
+    margin-left: -6.5%;
+    text-align-last: left;
+    font-family: var(--fontK);
+    margin-top: 20px;
+    color: var(--black600);
+    line-height: 1.6;
+}
+
+/* article2 */
+.article2 {
+    text-align: right;
+    margin-top: -20vh;
+    padding-right: 1%;
+}
+
+.article2 .imgWrap {
+    width: 35%;
+    aspect-ratio: 9/12;
+    position: relative;
+    overflow: hidden;
+    margin-left: auto;
+}
+
+.article2 .imgWrap .img {
+    position: absolute;
+    left: -20%;
+    top: 5%;
+    width: 146%;
+    height: 140%;
+    background: url(../img/quse.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.article2 h3 {
+    font-family: var(--fontK);
+    color: var(--pointBg);
+    font-size: 2.125vw;
+    margin-top: 30px;
+    padding-left: 20px;
+}
+
+.article2 p,
+.article2 pre {
+    font-family: var(--fontK);
+    margin-top: 20px;
+    color: var(--black600);
+    line-height: 1.6;
+    padding-left: 20px;
+}
+
+.article2 .imgWrap .link {
+    padding-left: 20px;
+    margin-top: 10px;
+    font-family: var(--fontK);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.article2 .imgWrap .link a {
+    position: relative;
+    margin-right: 5px;
+    background-color: #ffffff68;
+    padding: 5px 33px 5px 17px;
+    margin-bottom: 20px;
+    display: inline-block;
+    border-radius: 50px;
+    border: 1px solid var(--white);
+    backdrop-filter: blur(10px);
+}
+
+.article2 .link a::after {
+    display: inline-block;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: url("../img/arrow.svg") no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    transition: all 0.3s;
+}
+
+.article2 .link a:hover::after {
+    transform: rotate(-45deg);
+}
+
+/* article3 */
+.article3 {
+    text-align: left;
+    margin-top: -24vw;
+    padding-left: 1%;
+}
+
+.article3 .imgWrap {
+    width: 35%;
+    aspect-ratio: 9/12;
+    position: relative;
+    overflow: hidden;
+    margin-left: 0%;
+}
+
+.article3 .imgWrap .img {
+    position: absolute;
+    left: -20%;
+    top: 5%;
+    width: 146%;
+    height: 140%;
+    background: url(../img/cssanime.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.article3 h3 {
+    font-family: var(--fontK);
+    color: var(--pointBg);
+    font-size: 2.125vw;
+    margin-top: 30px;
+    padding-left: 20px;
+}
+
+.article3 p,
+.article3 pre {
+    font-family: var(--fontK);
+    margin-top: 20px;
+    color: var(--black600);
+    line-height: 1.6;
+    margin-left: 1.4%;
+}
+
+.article3 pre {
+    margin-left: -5%;
+}
+
+.article3 .imgWrap .link {
+    padding-left: 20px;
+    margin-top: 10px;
+    font-family: var(--fontK);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.article3 .imgWrap .link a {
+    position: relative;
+    margin-right: 5px;
+    background-color: #ffffff68;
+    padding: 5px 33px 5px 17px;
+    margin-bottom: 20px;
+    display: inline-block;
+    border-radius: 50px;
+    border: 1px solid var(--white);
+    backdrop-filter: blur(10px);
+}
+
+.article3 .link a::after {
+    display: inline-block;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: url("../img/arrow.svg") no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    transition: all 0.3s;
+}
+
+.article3 .link a:hover::after {
+    transform: rotate(-45deg);
+}
+
+/* article4 */
+.article4 {
+    text-align: right;
+    margin-top: -20vh;
+    padding-right: 1%;
+}
+
+.article4 .imgWrap {
+    width: 40%;
+    aspect-ratio: 9/12;
+    position: relative;
+    overflow: hidden;
+    margin-left: auto;
+}
+
+.article4 .imgWrap .img {
+    position: absolute;
+    left: -20%;
+    top: 5%;
+    width: 146%;
+    height: 140%;
+    background: url(../img/mouseeffect.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.article4 h3 {
+    font-family: var(--fontK);
+    color: var(--pointBg);
+    font-size: 2.125vw;
+    margin-top: 30px;
+    padding-left: 20px;
+}
+
+.article4 p,
+.article4 pre {
+    font-family: var(--fontK);
+    margin-top: 20px;
+    color: var(--black600);
+    line-height: 1.6;
+    padding-left: 20px;
+}
+
+.article4 .imgWrap .link {
+    padding-left: 20px;
+    margin-top: 10px;
+    font-family: var(--fontK);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.article4 .imgWrap .link a {
+    position: relative;
+    margin-right: 5px;
+    background-color: #ffffff68;
+    padding: 5px 33px 5px 17px;
+    margin-bottom: 20px;
+    display: inline-block;
+    border-radius: 50px;
+    border: 1px solid var(--white);
+    backdrop-filter: blur(10px);
+}
+
+.article4 .link a::after {
+    display: inline-block;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: url("../img/arrow.svg") no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    transition: all 0.3s;
+}
+
+.article4 .link a:hover::after {
+    transform: rotate(-45deg);
+}
+
+.article5 {
+    text-align: left;
+    margin-top: -40vh;
+    padding-left: 1%;
+}
+
+.article5 .imgWrap {
+    width: 35%;
+    aspect-ratio: 9/12;
+    position: relative;
+    overflow: hidden;
+    margin-left: 0%;
+}
+
+.article5 .imgWrap .img {
+    position: absolute;
+    left: -20%;
+    top: 5%;
+    width: 146%;
+    height: 140%;
+    background: url(../img/blog.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.article5 h3 {
+    font-family: var(--fontK);
+    color: var(--pointBg);
+    font-size: 2.125vw;
+    margin-top: 30px;
+    padding-left: 20px;
+}
+
+.article5 p,
+.article5 pre {
+    font-family: var(--fontK);
+    margin-top: 20px;
+    color: var(--black600);
+    line-height: 1.6;
+    margin-left: 1.4%;
+}
+
+.article5 pre {
+    margin-left: -5%;
+}
+
+.article5 .imgWrap .link {
+    padding-left: 20px;
+    margin-top: 10px;
+    font-family: var(--fontK);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.article5 .imgWrap .link a {
+    position: relative;
+    margin-right: 5px;
+    background-color: #ffffff68;
+    padding: 5px 33px 5px 17px;
+    margin-bottom: 20px;
+    display: inline-block;
+    border-radius: 50px;
+    border: 1px solid var(--white);
+    backdrop-filter: blur(10px);
+}
+
+.article5 .link a::after {
+    display: inline-block;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: url("../img/arrow.svg") no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    transition: all 0.3s;
+}
+
+.article5 .link a:hover::after {
+    transform: rotate(-45deg);
+}
+
+/* article6 */
+.article6 {
+    text-align: right;
+    margin-top: -20vh;
+    padding-right: 1%;
+}
+
+.article6 .imgWrap {
+    width: 50%;
+    aspect-ratio: 9/12;
+    position: relative;
+    overflow: hidden;
+    margin-left: auto;
+}
+
+.article6 .imgWrap .img {
+    position: absolute;
+    left: -20%;
+    top: 5%;
+    width: 146%;
+    height: 140%;
+    background: url(../img/phpblog.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.article6 h3 {
+    font-family: var(--fontK);
+    color: var(--pointBg);
+    font-size: 2.125vw;
+    margin-top: 30px;
+    padding-left: 20px;
+}
+
+.article6 p,
+.article6 pre {
+    font-family: var(--fontK);
+    margin-top: 20px;
+    color: var(--black600);
+    line-height: 1.6;
+    padding-left: 20px;
+}
+
+.article6 .imgWrap .link {
+    padding-left: 20px;
+    margin-top: 10px;
+    font-family: var(--fontK);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.article6 .imgWrap .link a {
+    position: relative;
+    margin-right: 5px;
+    background-color: #ffffff68;
+    padding: 5px 33px 5px 17px;
+    margin-bottom: 20px;
+    display: inline-block;
+    border-radius: 50px;
+    border: 1px solid var(--white);
+    backdrop-filter: blur(10px);
+}
+
+.article6 .link a::after {
+    display: inline-block;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: url("../img/arrow.svg") no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    transition: all 0.3s;
+}
+
+.article6 .link a:hover::after {
+    transform: rotate(-45deg);
+}
