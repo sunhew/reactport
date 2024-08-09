@@ -7,6 +7,7 @@ import coffeeImage from '../assets/img/coffee.png';
 import musicImage from '../assets/img/music.png';
 import fontImage from '../assets/img/font.png';
 
+
 gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
@@ -16,6 +17,8 @@ const Home = () => {
         const lenis = new Lenis({
             duration: 1.2,
             easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+            smoothWheel: true,
+            smoothTouch: false,
         });
 
         function raf(time) {
@@ -72,7 +75,7 @@ const Home = () => {
             trigger: "#section2",
             start: "top top",
             end: "+=2000",
-            scrub: true,
+            scrub: 1,
             pin: true,
             anticipatePin: 1,
             markers: false,
@@ -80,13 +83,13 @@ const Home = () => {
 
         // #section3 텍스트 애니메이션 설정
         gsap.set(".coding .char, .project .char, .blog .char", { opacity: 0, y: 50 });
-        gsap.set(".coding .circle, .project .circle, .blog .circle", { y: -200, opacity: 0, duration: 1 });
+        gsap.set(".coding .circle, .project .circle, .blog .circle", { y: -200, opacity: 0 });
 
         // .coding 애니메이션 설정
         const codingTl = gsap.timeline({
             scrollTrigger: {
                 trigger: ".coding",
-                start: "top center",
+                start: "top 80%",
                 end: "bottom top",
                 toggleActions: "play none none none",
                 markers: false,
@@ -110,7 +113,7 @@ const Home = () => {
         const projectTl = gsap.timeline({
             scrollTrigger: {
                 trigger: ".project",
-                start: "top center",
+                start: "top 80%",
                 end: "bottom top",
                 toggleActions: "play none none none",
                 markers: false,
@@ -134,7 +137,7 @@ const Home = () => {
         const blogTl = gsap.timeline({
             scrollTrigger: {
                 trigger: ".blog",
-                start: "top 75%",
+                start: "top 80%",
                 end: "bottom top",
                 toggleActions: "play none none none",
                 markers: false,
@@ -176,8 +179,8 @@ const Home = () => {
 
         ScrollTrigger.create({
             trigger: "#section3",
-            start: "top 1%",
-            end: "bottom -90%",
+            start: "top 80%",
+            end: "bottom 20%",
             onEnter: () => {
                 gsap.to(followCircle, { opacity: 1, duration: 0.3 });
             },
@@ -241,19 +244,18 @@ const Home = () => {
         applyParallaxEffect();
 
         // 화면 크기가 변경될 때마다 실행
-        mediaQuery.addEventListener("resize", applyParallaxEffect);
+        mediaQuery.addEventListener("change", applyParallaxEffect);
 
         // section5 애니메이션
         gsap.set("#section5 .line_own, #section5 .line_to, #section5 .line_tree, #section5 .description", {
             opacity: 0,
             y: -100,
-            duration: 3.6,
         });
 
         const section5Tl = gsap.timeline({
             scrollTrigger: {
                 trigger: "#section5",
-                start: "top 45%",
+                start: "top 50%",
                 end: "bottom top",
                 toggleActions: "play reset play reset",
                 markers: false,
